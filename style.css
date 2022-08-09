@@ -1,0 +1,73 @@
+:root {
+    --void:  #0c0c34ed;
+    --neon: yellowgreen;
+    --navi: rgb(0, 65, 48);
+}
+* {
+    box-sizing: border-box;
+    background-color: rgb(46, 45, 45);
+}
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+}
+header {
+    background: var(--void);
+    color: var(--neon);
+    text-align: right;
+}
+header h1 {
+    background-color: var(--void);
+    float: right;
+    margin: 55px;
+}
+nav {
+    display: flex;
+    background-color: var(--navi);
+    order: 1;
+}
+nav a {
+    color: var(--neon);
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: right;
+    background-color: var(--navi);
+}    
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+aside {
+    background-color: var(--void);
+    text-align: center;
+    border: solid 3px var(--neon);
+    max-width: 40%;
+}
+footer {
+    text-align: center;
+    font-size: 25px;
+    background: var(--void);
+    color: var(--neon);
+    padding: 40px;
+}
+.skillSets {
+    background-color: var(--void);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 25%;
+}
+.skills {
+    background-color: var(--void);
+    border: solid 5px var(--neon);
+    margin: 10px;
+}
+#headerCoding {
+    opacity: .6;
+    height: 200px;
+    width: 400px;
+    display: flex;
+}
+#bio {
+    
+}
