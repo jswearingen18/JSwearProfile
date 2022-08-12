@@ -6,7 +6,7 @@
 Portfolio for my own personal profile used to display what projects I have completed. As well as demontrate CSS skills as well as semantic HTML code. 
 
 ## Github url link
- https://jswearingen18.github.io/JSwearProfile/
+ https://jswearingen18.github.io/JSwearProfile/index.html
 ## Webpage url link
 
 ## Badges
