@@ -8,12 +8,13 @@
 /* Universal elements for background color*/
 * {
     box-sizing: border-box;
-    background-color: rgb(41, 39, 39);
+    
 }
 /* Makes all of the body section use the same font and have 0 margin*/
 body {
     font-family: Verdana, Tahoma, sans-serif;
     margin: 0;
+    background-color: rgb(41, 39, 39);
 }
 /*Gives the header a background color and text color and sets up display flex */
 header {
@@ -21,6 +22,7 @@ header {
     color: var(--neon);
     text-align: right;
     display: flex;
+    flex-direction: row;
 }
 /*Gives the Span element a text color and background color as well as 
 underlines the span section */
@@ -56,7 +58,7 @@ nav a {
     color: var(--neon);
     padding: 15px 20px;
     text-decoration: none;
-    background-color: var(--navi);
+    /*background-color: var(--navi);*/
     text-align: right;
 }    
 /* Creates Hover functionality for links through out page to change color with shadow*/
@@ -68,7 +70,7 @@ main {
     flex-wrap: wrap;
 }
 /* gives location to aside element was originally located on left side has since changed will reassign different element*/
-aside {
+div {
     background-color: var(--void);
     text-align: center;
     border: solid 3px var(--neon);
@@ -79,7 +81,7 @@ aside {
     margin-bottom: 90px;
 }
 /* gives positioning and color to about me paragraph*/
-aside p {
+div p {
     background-color: var(--void);
     color: crimson;
     margin-left: 35px;
@@ -270,4 +272,22 @@ as well as image positioning. Could not link all due to different locations opac
     height: 15px;
     width: 20px;
     opacity: .5;
+ }
+ #sidebeat {
+    position: absolute;
+    left: 600px;
+    width: 600px;
+    height: 300px;
+    bottom: -150px;
+ }
+ @media only screen and (max-width: 780px) {
+    #webD2 {
+        display: none;
+    }
+    #webD3 {
+        display: none;
+    }
+    #webD4 {
+        display: none;
+    }
  }
