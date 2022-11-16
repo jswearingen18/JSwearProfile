@@ -98,7 +98,7 @@ footer {
     background: var(--void);
     color: var(--neon);
     padding: 40px;
-    margin-top: 800px;
+    margin-top: 1200px;
 }
 /* Sets width and alligns text for skillsets div */
 .skillSets {
@@ -278,7 +278,14 @@ as well as image positioning. Could not link all due to different locations opac
     left: 600px;
     width: 600px;
     height: 300px;
-    bottom: -150px;
+    bottom: -350px;
+ }
+ #dadjokes {
+    position: absolute;
+    left: 600px;
+    width: 600px;
+    height: 300px;
+    bottom: -660px;
  }
  @media only screen and (max-width: 780px) {
     #webD2 {
