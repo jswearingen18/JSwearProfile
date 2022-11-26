@@ -1,293 +1,213 @@
-/*root element for the colors common on the page*/
 :root {
-    --void:  #0c0c34ed;
-    --neon: yellowgreen;
-    --navi: rgb(0, 65, 48);
-    --background:  rgb(41, 39, 39)
+    --neonB:  rgb(6, 6, 249); 
+    --navyB:  rgb(3, 3, 128);
+    --darkB:  rgb(0, 0, 55);
 }
-/* Universal elements for background color*/
+
 * {
-    box-sizing: border-box;
-    
+    margin: 0px;
 }
-/* Makes all of the body section use the same font and have 0 margin*/
-body {
-    font-family: Verdana, Tahoma, sans-serif;
-    margin: 0;
-    background-color: rgb(41, 39, 39);
-}
-/*Gives the header a background color and text color and sets up display flex */
+
 header {
-    background: var(--void);
-    color: var(--neon);
-    text-align: right;
-    display: flex;
-    flex-direction: row;
+    background-color:rgb(75, 75, 75);
+    margin: 0px;
+    position: sticky;
 }
-/*Gives the Span element a text color and background color as well as 
-underlines the span section */
-span {
-    color: crimson;
-    background-color: var(--void);
-    text-decoration: underline;
+
+li {
+    padding-left: 20px;
 }
-/*Gives the header color and uses margin for spacing */
-header h1 {
-    background-color: var(--void);
-    margin: 55px;
+
+.navBox {
+    background-color: rgb(62, 60, 60);
+    padding: 10px;
 }
-/* Gives header p within box color and location and well as decor*/
-header p {
-    background-color: var(--void);
-    margin: 55px;
+
+.navLinks {
+   text-align: right;
+   list-style: none;
+   display: flex;
+   font-size: 30px;
+   justify-content: right;
+}
+
+.contactLinks,
+.footerTitle,
+.navLinks,
+.headerTitle {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(to right, var(--neonB), var(--navyB), var(--darkB), var(--neonB));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.headerCenter {
     text-align: center;
-    font-size: 60px;
-    height: 90px;
-    margin-left: 180px;
-    text-decoration:line-through;
+    font-size: 50px;
+    padding: 20px;
 }
-/* Sets up nav bar with color font size and flex */
-nav {
-    display: flex;
-    background-color: var(--navi);
-    font-size: 25px;
+
+.profilePic {
+    align-items: left;
+    height: 300px;
+    width: 300px;
+    border-radius: 1000px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 525px;
+    margin-bottom: 20px;
+}
+
+.profileBox {
+    display: inline-flex;
+    border: 1px solid rgb(75, 75, 75);
+    background-color: rgb(62, 60, 60);
+    margin: 30px;
+}
+
+.aboutBox {
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.aboutText {
+    margin-right: 30px;
     text-align: right;
 }
-/* Sets up links in nav bar with color and location also removes underlines for links*/
-nav a {
-    color: var(--neon);
-    padding: 15px 20px;
-    text-decoration: none;
-    /*background-color: var(--navi);*/
-    text-align: right;
-}    
-/* Creates Hover functionality for links through out page to change color with shadow*/
-a:hover {
-    text-shadow: 10px 10px crimson;
-}
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-/* gives location to aside element was originally located on left side has since changed will reassign different element*/
-div {
-    background-color: var(--void);
+
+.linkInfo {
     text-align: center;
-    border: solid 3px var(--neon);
-    max-width: 100%;
-    margin-left: 300px;
-    margin-right: 300px;
-    padding-bottom: 50px;
-    margin-bottom: 90px;
 }
-/* gives positioning and color to about me paragraph*/
-div p {
-    background-color: var(--void);
-    color: crimson;
+
+.firstProject {
+    position: relative;
+    margin: 3%;
+}
+
+.sideText {
+    position: absolute;
+    top: 0px;
+    left: 396px;
+    font-size: 30px;
+    border: 1px solid var(--neonB);
+    padding: 7px;
+    background-color: var(--neonB);
+    color: aliceblue;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.sideBeats {
+    width: 1000px;
+    border-radius: 7px;
+    border: 3px solid var(--neonB);
+}
+
+.projectBox {
+align-content: center;
+}
+
+.projects {
+    margin-bottom: 30px;
+}
+
+.projectPics {
+    width: 550px;
+    height: 375px;
     margin-left: 35px;
     margin-right: 35px;
-    margin-top: 80px;
-    font-size: 20px;
-    padding-left: 90px;
-    padding-right: 90px;
+    border: 3px solid var(--neonB);
+    border-radius: 7px;
 }
-/*Creates color and positioning for footer section  */
-footer {
+
+.contactBox {
+    margin-bottom: 0px;
+}
+.contactLinks {
     text-align: center;
-    font-size: 25px;
-    background: var(--void);
-    color: var(--neon);
-    padding: 40px;
-    margin-top: 800px;
-}
-/* Sets width and alligns text for skillsets div */
-.skillSets {
- width: 25%;
- text-align: center;
-}
-/* Sets positioning for current skills */
-.currentSkills header{
-    position: relative;
-margin-left: 120px;
-margin-right: 150px;
-font-size: 40px;
-background-color: var(--background);
-margin-top: 50px;
-margin-bottom: 40px;
-color: var(--neon);
-width: 300px;
-}
-/* Sets list conditions within current skills*/
-.currentSkills ul li {
     list-style: none;
-    font-size: 30px;
-    text-align: center;
-    color: var(--neon);
-}
-/*sets positioning for futureSkills as well as border */
-.futureSkills {
-    position: absolute;
-    left: 900px;
-    top: 1900px;
-    border: 3px solid var(--neon);
-    border-radius: 20px;
-}
-/* Positions header for future skills box using absolute*/
-.futureSkills header {
-    position: absolute;
-    left: 430px;
-    top: 100px;
-    background-color: var(--background);
-    font-size: 80px;
-}
-/* Sets conditions for list within future Skills */
-.futureSkills ul li {
-    font-size: 25px;
-    list-style: none;
-    text-align: center;
-    color: var(--neon);
-    margin-right: 30px;
-}
-/* Sets position for past projects box */
-.pastProjects {
-    position: absolute;
-    bottom: -1600px;
-    left: 350px;
-    border: 3px solid var(--neon);
-    height: 400px;
-    border-radius: 20px;
-}
-/* Sets position for header of past projects as well as text color */
-.pastProjects header {
-    position: absolute;
-    right: 400px;
-    top: 100px;
-    background-color: var(--background);
-    font-size: 60px;
-    color: crimson;
-}
-/* Sets conditions for past projects lists */
-.pastProjects ul li {
-    font-size: 25px;
-    list-style: none;
-    text-align: center;
-    color: var(--neon);
-    margin-block-start: 20px;
-    margin-top: 70px;
-}
-/* Sets conditions for past projects links */
-.pastProjects a {
-    color: var(--void);
-    margin-right: 20px;
-    text-decoration: none;
-}
-.tBoxText {
-    background-color: var(--navi);
-    margin-left: 40px;
-}
-/* All following ids are used for absolute position to try and create my own custom design in header
-as well as image positioning. Could not link all due to different locations opacity and colors used*/
-#headerCoding {
-    opacity: .6;
-    height: 200px;
-    width: 400px;
     display: flex;
-    margin-left: 240px;
-    position: absolute;
-    right: 0px;
+    font-size: 25px;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
 }
-#personalPhoto {
-    position: absolute;
-    top: 1050px;
-    right: 70px;
-    height: 600px;
-    width: 300px;
-    opacity: .4;
-    border-radius: 10%;
+
+.footerBox {
+    background-color: rgb(75, 75, 75);
+    margin-bottom: 0px;
+    height: 100px;
 }
-#personalPhoto2 {
-    position: absolute;
-    top: 600px;
-    left: 50px;
-    height: 500px;
-    width: 300px;
-    opacity: .9;
-    border-radius: 20%;
-}
-#personalPhoto3 {
-    position: absolute;
-    top: 1500px;
-    left: 600px;
-    height: 300px;
-    width: 450px;
-    opacity: .5;
-    border-radius: 35%;
-}
-#bio {
+
+.footerTitle {
     text-align: center;
-    border: 2px solid crimson;
-    position: absolute;
-    margin-left: 150px;
-    border-radius: 50%;
-    top: 1080px;
-    height: 32px;
-    left: 700px;
+    padding-top: 25px;
 }
-#codePhoto {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    margin-top: 30px;
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
 }
-#webD2 {
-   position: absolute;
-   top: -20px;
-   font-size: 15px;
-   left: 650px;
-   color: var(--navi);
-   text-decoration: none;
-   width: 0px;
-   text-align: center;
-   font-weight: 900;
+
+@media only screen and (max-width: 780px) {
+    .navLinks {
+        font-size: 15px;
+        display: block;
+    }
+
+    .profileBox {
+        font-size: 12px;
+        display: block;
+    }
+
+    .sideBeats {
+        width: 500px;
+        height: 325px;
+    }
+
+    .projectPics {
+        width: 500px;
+        height: 325;
+    }
+
+    .contactLinks {
+        font-size: 15px;
+        display: block;
+    }
 }
-#webD3 {
-    position: absolute;
-    top: 60px;
-    font-size: 25px;
-    left: 500px;
-    color: crimson;
-    text-decoration: none;
-    height: 15px;
-    opacity: .6;
- }
- #webD4 {
-    position: absolute;
-    top: -50px;
-    font-size: 25px;
-    right: 480px;
-    color: var(--neon);
-    text-decoration: none;
-    height: 15px;
-    width: 20px;
-    opacity: .5;
- }
- #sidebeat {
-    position: absolute;
-    left: 600px;
-    width: 600px;
-    height: 300px;
-    bottom: -150px;
- }
- @media only screen and (max-width: 780px) {
-    #webD2 {
-        display: none;
+
+@media only screen and (max-width: 540px) {
+    .navLinks {
+        font-size: 15px;
+        display: block;
     }
-    #webD3 {
-        display: none;
+
+    .profileBox {
+        font-size: 12px;
+        display: block;
     }
-    #webD4 {
-        display: none;
+
+    .sideBeats {
+        width: 300px;
+        height: 125px;
     }
- }
+
+    .projectPics {
+        width: 300px;
+        height: 125px;
+    }
+
+    .contactLinks {
+        font-size: 15px;
+        display: block;
+    }
+}

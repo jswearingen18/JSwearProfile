@@ -1,101 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Jeremiah S. Profile</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Swearingen Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="headerBox">
+        <h1 class="headerTitle headerCenter">Jeremiah J Swearingen <br>Portfolio</h1>
+        <nav class="navBox">
 
-    <!--Header Section-->
-    <header>
-        <h1>Jeremiah J. Swearingen <span>Portfolio Page</span></h1>
-        <p>Web Developer</p>
-        <p id="webD2">Web Developer</p>
-        <p id="webD3">Web Developer</p>
-        <p id="webD4">Web Developer</p>
-        <img id="headerCoding" src="https://www.eschoolnews.com/files/2021/02/coding-platform-STEM-code.jpg">
+            <ul class="navLinks">
+                <a href="#aboutText"><li>About Me</li></a>
+                <a href="https://www.linkedin.com/in/jeremiah-swearingen-021985244/"><li>LinkedIn</li></a>
+                <a href="https://github.com/jswearingen18"><li>Github</li></a>
+                <a href="https://drive.google.com/file/d/1LFvUv7QJAWpKrihcGVlpZLJ7O0HVOQmJ/view?usp=share_link"><li>Resume</li></a>
+                <a href="#contactLinks"><li>Contact Me</li></a>
+            </ul>
+        </nav>
     </header>
-   <!--Navigationbar-->
-   <nav>
-        <a href="#bio" target="_blank">About Me</a>
-        <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
-        <a href="https://github.com/jswearingen18?tab=repositories" target="_blank">Github</a>
-        <a href="#" target="_blank">Resume</a>
-        <a href="#" >Contact Me</span>
-        <span class="tBoxText">Email: JSwearingen18@gmail.com</span>
-    </nav>
-    <body>
-    <img id ="codePhoto" src="assets\codingBackground.jpg">
-    <!--Main-->
-    <main>
-        <!--Box in middle of screen-->
-    <div>
-        <h3 id="bio">About Jeremiah Swearingen</h3>
-            <p>My name is Jeremiah Swearingen. I have been a manager
-            with Starbucks for 7 years. I have a wife, a son, and
-            a daughter on the way. I am currently enrolled with
-            Vanderbilt University for a coding bootcamp. This is an
-            opportunity to help me learn various computer languages.
-            I aim to take this knwoledge and apply it to a new career
-            field in the technology field. Some interest include a full
-            stack web developer, software engineer, computer engineer,
-            and etc.</p>
+    <div class="profileBox">
+        <img class="profilePic" src="assets\Portfolio Image edit.png" alt="Profile Picture">
+        <div class="aboutBox">
+            <div>
+            <p id="aboutText" class="aboutText">My name is Jeremiah Swearingen and this is my portfolio.
+                I started my journey working for Starbucks and through that 
+                I found a love for the tech industry. I have branched out originally
+                through Arizona State University pursuing a degree with software
+                Engineering. I thoroughly enjoyed those courses so I took the path
+                of bootcamp through Vanderbilt University. I am married to Anastasia Swearingen
+                together we have two beautiful children Ezekiel my two year old son and 
+                Eliza my 3 month old daughter. 
+            </p>
             </div>
-    <!--Personal Photos used through the body-->
-    <img id="personalPhoto" src="assets\weddingshot.png" alt="Profile Photo">
-    <img id="personalPhoto2" src="assets\engagementphot.png" alt="Profile Photo">
-    <img id="personalPhoto3" src="assets\Zeke.jpg" alt="Profile Photo">
-    <!--Div section of page with class skillSets-->
-    <div class="skillSets">
-        <!--Section inside of Div titled currentSkills each section has an unordered list built in-->
-        <section class="currentSkills">
-            <header>Current Skills</header>
-            <ul>
-                <li>Github</li>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </section>
-        <!--secction inside of Div titled futureSkills-->
-    <section class="futureSkills">
-        <header>Future Skills</header>
-            <ul>
-                <li>Web API</li>
-                <li>Third-Party API</li>
-                <li>Server Side API</li>
-                <li>Node.js</li>
-                <li>Object Oriented Programming</li>
-                <li>Express.js</li>
-                <li>SQL</li>
-                <li>Object-Relational Mapping</li>
-                <li>Model-View-Controller</li>
-                <li>NoSQL</li>
-                <li>Progressive Web Applications</li>
-                <li>React</li>
-                <li>MERN</li>
-            </ul>
-    </section>
-    <!--Last section inside of Div containing previous code-->
-    <section class="pastProjects">
-        <header>Past Projects</header>
-        <ul>
-            <li><a href="https://github.com/jswearingen18/ConstructionProjectCost" target="_blank">Construction Project Cost</a></li>
-            <li><a href="https://github.com/jswearingen18/HoriseonChallengeWeek" target="_blank">Horiseon Media Marketing</a></li>
-            <li><a href="https://github.com/jswearingen18/JSwearProfile" target="_blank">Jeremiah Swearingen Profile</a></li>
+        </div>
+    </div>
+    <h1 class="linkInfo">Click any of the pictures below!</h1>
+    <div class="firstProject">
+        <center><a href='https://jswearingen18.github.io/Side-Beat/'><img class="sideBeats" src="assets\sideBeat.png" alt="SideBe@ts"></center>
+            <h3 class="sideText">SideBeats<br>Project</h3>
+    </div>
+    <div class="projectBox">
+    <div class="projects">
+       <a href='https://dadjokesgalore.herokuapp.com/'><img class="projectPics" src="assets\dadjokes.png" alt="DadJokesGalore Site"></a>
+       <a href='https://cyberlog.herokuapp.com/'><img class='projectPics' src="assets\cyberlog.png" alt="CYBERlog Site"></a>
+       <a href="https://jswearingen18.github.io/PasswordGenie/"><img class="projectPics" src="assets\passwordG.png" alt="Password Genie"></a>
+    </div>
+</div>
+<div class="contactBox">
+    <nav class="navBox">
+        <ul id="contactLinks" class="contactLinks">
+            <li>Email: jswearingen18@gmail.com</li>
+            <a href="https://github.com/jswearingen18"><li>Github: Click Here</li></a>
+            <a href="https://www.linkedin.com/in/jeremiah-swearingen-021985244/"><li>LinkedIn: Click Here</li></a>
+            <li>Phone: 931-449-9642</li>
         </ul>
-        <a href="https://jswearingen18.github.io/Side-Beat/" target="_blank"><img id="sidebeat" src="assets\sidebeat.png" alt="project1photo"></a>
-
-    </section>
-</div> 
-</main>
-
-<!--Footer-->
-     <footer>
-
-    © 2022 Jeremiah S. Profile
-    <span id="footerSpan">Special thanks to vanderbilt and W3Schools</span>
-    </footer>
+    </nav>
+</div>
+<footer class="footerBox">
+    <h2 class="footerTitle">Made by: Jeremiah Swearingen<br>&copy</h2>
+</footer>
 </body>
 </html>
